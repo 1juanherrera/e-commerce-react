@@ -61,9 +61,9 @@ const productDetail = () => {
                         <h3>{product?.title}</h3>
                         <div className="details__description"><p>Product description</p></div>
                         <p>{product?.description}</p>
-                        <button className="discount" onClick={() => setRate(rate - 1)}>-</button>
+                        <button className="discount" disabled={rate === 1} onClick={() => setRate(rate - 1)}>-</button>
                                 <span className="rate">{rate}</span>
-                            <button className="count" onClick={() => setRate(rate + 1)}>+</button>
+                            <button className="count"  onClick={() => setRate(rate + 1)}>+</button>
                         <button onClick={AddToFavorites} className="add-fav">Add to cart <i className='bx bx-cart-alt'></i></button>
                 </div>
             </motion.div>
