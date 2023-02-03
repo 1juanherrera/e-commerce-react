@@ -123,12 +123,24 @@
         align-items: center;
         background-color: v.$white;
         border-radius: v.$xl-4;
+        position: relative;
         box-shadow: -10px -10px 15px rgb(58 58 58 / 9%), 10px 10px 15px rgb(66 66 66 / 35%);
 
         img {
             height: 300px;
             object-fit: cover;
         }
+    }
+
+    &__buttons {
+        border: 1px solid;
+        
+        button {
+            margin: 0 auto;
+            margin-left: 130px;
+            margin-top: 20px;
+        }
+        
     }
 
     .related {

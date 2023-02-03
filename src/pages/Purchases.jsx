@@ -11,7 +11,7 @@ const Purchases = () => {
         axios
         .get("https://e-commerce-api.academlo.tech/api/v1/purchases/", getConfig())
         .then((resp) => {
-            console.log(resp.data.data.purchases)
+            //console.log(resp.data.data.purchases)
             setPurchases(resp.data.data.purchases)
         })
       . catch((error) => console.error(error));

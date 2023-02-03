@@ -53,7 +53,7 @@ const productDetail = () => {
             transition={{duration: 1}}
             className="details__info">
                 <div className="details__image">
-                <img src={product?.productImgs[0]}/>
+                <img className="img-one" src={product?.productImgs[0]}/>
                 </div>
                 <div className="details__all">
                         

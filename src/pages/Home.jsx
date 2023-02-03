@@ -80,7 +80,6 @@ const Home = () => {
                                 <Link to={`/products/${newsProduct.id}`}>
                                     <button>Details</button>
                                 </Link>
-                                <button>Hola</button>
                             </div>
                         </div>
                     ))
