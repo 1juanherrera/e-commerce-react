@@ -1,0 +1,211 @@
+@use 'variables' as v;
+
+.details {
+    position: relative;
+    top: 100px;
+    font-family: 'Gilroy bold';
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__info {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .details__all {
+            margin-left: v.$lg;
+            width: 40rem;
+            align-items: start;
+            height: 25rem;
+            text-align: center;
+            margin-top: 50px;
+            
+            h3{
+                font-weight: 500;
+            }
+
+            span {
+                color: v.$grey;
+            }
+
+            .details__description {
+                margin-top: 10px;
+            }
+
+            div {
+
+                p {
+                    font-weight: 600;
+                    color: grey;
+                }
+            }
+        }
+
+            .discount {
+                background-color: v.$primary;
+                height: v.$xl-3;
+                width: v.$xl-3;
+                border-radius: 8px;
+                border: none;
+                color: v.$white;
+                transition: .3s;
+                font-size: v.$md;
+                margin-top: v.$xl;
+                font-family: 'Gilroy bold';
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.7;
+                    transform: scale(1.1);
+    
+                }
+            }
+    
+            .count {
+                background-color: v.$primary;
+                height: v.$xl-3;
+                width: v.$xl-3;
+                border-radius: 8px;
+                border: none;
+                color: v.$white;
+                transition: .3s;
+                font-size: v.$md;
+                font-family: 'Gilroy bold';
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.7;
+                    transform: scale(1.1);
+    
+                }
+            }
+            
+            .rate {
+                margin: v.$sm;
+                font-size: v.$md;
+                font-weight: 600;
+            }
+
+
+        .add-fav {
+            margin-left: 40px;
+            background-color: v.$primary;
+            height: v.$xl-3;
+            width: 200px;
+            border-radius: 8px;
+            border: none;
+            color: v.$white;
+            transition: .3s;
+            font-family: 'Gilroy bold';
+            &:hover {
+                cursor: pointer;
+                opacity: 0.7;
+                transform: scale(1.1);
+
+            }
+
+            .bx-cart-alt {
+                color: v.$white;
+                font-size: v.$md;
+            }
+        }
+    }
+
+    &__image {
+        width: 600px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: v.$white;
+        border-radius: v.$xl-4;
+        box-shadow: -10px -10px 15px rgb(58 58 58 / 9%), 10px 10px 15px rgb(66 66 66 / 35%);
+
+        img {
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+
+    .related {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: v.$xl-6;
+
+        &__container {
+            box-shadow: -10px -10px 15px rgb(58 58 58 / 9%), 10px 10px 15px rgb(66 66 66 / 35%);
+            width: 400px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 10px;
+            background: v.$light;
+            border-radius: v.$xl-3;
+    
+            h3 {
+                font-size: v.$md;
+            }
+    
+            div {
+                align-items: center;
+                display: flex;
+                height: 250px;
+                justify-content: center;
+                position: relative;
+                margin: 0;
+                flex-direction: column;
+    
+                .img-two {
+                    background: #fff;
+                    opacity: 0;
+                    position: absolute;
+                    transition: .3s;
+                    width: 80%;
+                    height: 80%;
+                    object-fit: contain;
+                    
+    
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+    
+                .img-one {
+                    display: block;
+                    height: 80%;
+                    object-fit: contain;
+                    width: 80%;
+                }
+    
+                button {
+                    box-shadow: -10px -10px 15px rgb(58 58 58 / 9%), 10px 10px 15px rgb(66 66 66 / 35%);
+                    padding: 11px;
+                    width: 8rem;
+                    border: none;
+                    outline: none;
+                    border-radius: 15px;
+                    background-color: v.$primary;
+                    object-fit: cover;
+                    transition: .3s;
+                    margin-top: 10px;
+                    color: v.$white;
+                    font-family: 'Gilroy bold';
+        
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

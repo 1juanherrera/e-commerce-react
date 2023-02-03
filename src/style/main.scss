@@ -1,0 +1,35 @@
+
+
+@import 'variables';
+@import 'Home';
+@import 'Navbar';
+@import 'Login';
+@import 'AlertError';
+@import 'ProductDetail';
+@import 'SideBar';
+@import 'Purchases';
+@import 'Loader';
+@import 'Footer';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/src/Fonts/Gilroy-Light.otf);
+}
+
+@font-face {
+    font-family: 'Gilroy bold';
+    src: url(/src/Fonts/Gilroy-ExtraBold.otf);
+}
+
+body {
+    background-color: #D7D7DB;
+}
+
+
+

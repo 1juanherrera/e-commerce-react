@@ -1,0 +1,30 @@
+@use 'variables' as v;
+
+.purchases {
+    position: relative;
+    top: 100px;
+    font-family: 'Gilroy';
+
+    h1 {
+        text-align: center;
+        font-family: 'Gilroy bold';
+        margin-bottom: v.$xl-4;
+        font-weight: 700;
+        font-size: v.$xl-4;
+    }
+
+    &__container {
+        margin: 0 auto;
+        font-weight: 600;
+        height: 50px;
+        width: 40rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: v.$sm;
+        background: v.$white;
+        border-radius: v.$sm;
+        box-shadow: -10px -10px 15px rgb(58 58 58 / 9%), 10px 10px 15px rgb(66 66 66 / 35%)
+    }
+}

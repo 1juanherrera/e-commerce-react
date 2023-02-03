@@ -1,0 +1,142 @@
+@use 'variables' as v;
+
+.form-container {
+    position: relative;
+    top: 80px;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    font-family: 'Gilroy bold';
+    
+    
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .form {
+        margin-top: 3rem;
+        background-color: $white;
+        padding: 4.5em 6em;
+        border-radius: 10px;
+        border-radius: 10px;
+        box-shadow: -10px -10px 15px rgb(58 58 58 / 9%), 10px 10px 15px rgb(66 66 66 / 35%);
+
+        &__form-paragraph {
+            font-weight: 300;
+        }
+
+        &__link {
+            font-weight: 400;
+            color: v.$grey;
+        }
+
+        &__container {
+            display: grid;
+            gap: 2.5em;
+            margin-top: 1rem;
+
+            div {
+                position: relative;
+                color: #5757577e;
+
+                input {
+                    width: 100%;
+                    background: none;
+                    color: #706c6c;
+                    font-size: 1rem;
+                    padding: .6em .3em;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid $primary;
+                    transform: .5s;
+
+                    &:focus + label,
+                    &:not(:placeholder-shown) + label {
+                        transform: translateY(-12px) scale(.7);
+                        transform-origin: left top;
+                        color: v.$grey;
+                    }
+
+                }
+
+                label {
+                    color: v.$grey;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    left: 5px;
+                    transform: translateY(10px);
+                    transition: transform .5s, color .3s;
+                }
+
+                span {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    transform: scale(0);
+                    transform: left bottom;
+                    transition: transform .4s;
+                }
+
+            }
+        }
+
+        button {
+            background-color: $primary;
+            color: $white;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: .8em 0;
+            border: none;
+            border-radius: .5em;
+            transition: .5s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+}
+
+.log-out {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    height: 100vh;
+
+    &__icon {
+        display: inline-block;
+        
+        .bx-user-circle {
+            font-size: 13rem;
+            color: v.$primary;
+        }
+    }
+
+    button {
+            color: v.$grey;
+            border: none;
+            height: v.$xl-5;
+            width: v.$large;
+            border-radius: v.$md;
+            margin-top: v.$md;
+            background-color: v.$white;
+            color: v.$primary;
+            font-family: 'Gilroy bold';
+            transition: .5s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+    }
+}

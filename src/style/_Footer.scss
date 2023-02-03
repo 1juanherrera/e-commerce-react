@@ -1,0 +1,44 @@
+@use 'variables' as v;
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    background-color: v.$primary;
+    color: v.$light;
+    
+        &__made-by {
+            margin-right: 40px;
+        }
+    
+        &__table {
+            height: 3px;
+            background-color: v.$light;
+            width: 55px;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+    
+        &__follow-me {
+            margin-right: 6px;
+        }
+    
+        &__github-icon {
+            font-size: 24px;
+            color: v.$light;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+    
+        b {
+            font-size: 15px;
+        }
+}

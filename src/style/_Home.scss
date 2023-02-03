@@ -1,0 +1,171 @@
+@use 'variables' as v;
+
+.home {
+    position: relative;
+    top: 150px;
+    font-family: 'Gilroy bold';
+    
+
+    &__input {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: v.$xl-6;
+        position: relative;
+        
+
+        input {
+            height: v.$xl-6;
+            border-radius: $large;
+            width: 25rem;
+            padding: 15px 90px 15px 15px;
+            font-size: v.$md;
+            box-shadow: -10px -10px 15px rgb(58 58 58 / 9%), 10px 10px 15px rgb(66 66 66 / 35%);
+            color: v.$grey;
+            border: none;
+            outline: none;
+            font-family: 'Gilroy';
+            font-weight: 700;
+        }
+
+        button {
+            position: absolute;
+            margin-left: 22rem;
+            color: v.$grey;
+            border: none;
+            height: v.$xl-6;
+            width: v.$xl-6;
+            border-radius: 50%;
+            background-color: v.$white;
+
+            i {
+                font-size: $lg;
+                color: v.$grey;
+                margin-top: 4px;
+            }
+        }
+
+        
+    }
+
+    &__card {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+        
+
+        .card-container {
+            box-shadow: -10px -10px 15px rgb(58 58 58 / 9%), 10px 10px 15px rgb(66 66 66 / 35%);
+            width: 400px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 10px;
+            background: v.$light;
+            border-radius: v.$xl-3;
+
+            h3 {
+                font-size: v.$md;
+            }
+
+            div {
+                align-items: center;
+                display: flex;
+                height: 250px;
+                justify-content: center;
+                position: relative;
+                margin: 0;
+                flex-direction: column;
+
+                .img-two {
+                    background: #fff;
+                    opacity: 0;
+                    position: absolute;
+                    transition: .3s;
+                    width: 80%;
+                    height: 80%;
+                    object-fit: contain;
+                    
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+
+                .img-one {
+                    display: block;
+                    height: 80%;
+                    object-fit: contain;
+                    width: 80%;
+                }
+
+                button {
+                    box-shadow: -10px -10px 15px rgb(58 58 58 / 9%), 10px 10px 15px rgb(66 66 66 / 35%);
+                    padding: 11px;
+                    width: 8rem;
+                    border: none;
+                    outline: none;
+                    border-radius: 15px;
+                    background-color: v.$primary;
+                    object-fit: cover;
+                    transition: .3s;
+                    margin-top: 10px;
+                    color: v.$white;
+                    font-family: 'Gilroy bold';
+        
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+        div {
+
+            span {
+                font-size: 0.9rem;
+                color: v.$grey;
+                position: relative;
+                margin-right: 70%;
+                margin: 0;
+            }
+        }
+
+
+    }
+
+    &__buttons {
+        margin: 0 auto;
+        width: 70%;
+        margin-top: 50px;
+        height: $xl-6;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        button {
+            padding: 12px;
+            width: 8rem;
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            box-shadow: -10px -10px 15px rgb(58 58 58 / 9%), 10px 10px 15px rgb(66 66 66 / 35%);
+            background-color: $primary;
+            object-fit: cover;
+            transition: .5s;
+            font-weight: 600;
+            color: v.$white;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }   
+}

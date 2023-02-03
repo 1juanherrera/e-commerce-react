@@ -1,0 +1,39 @@
+.alert {
+    position: absolute;
+
+    &__content {
+    background-color: $white;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: lightgrey;
+    border-radius: $large;
+
+        i {
+            font-size: $large;
+            text-align: center;
+            color: $primary;
+        }
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        padding: 2rem;
+    }
+
+    button {
+        border: none;
+        width: $large;
+        background-color: $primary;
+        outline: none;
+        border-radius: $md;
+        color: $white;
+        height: $xl-4;
+    }
+}

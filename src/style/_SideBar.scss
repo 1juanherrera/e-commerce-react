@@ -1,0 +1,76 @@
+@use 'variables' as v;
+
+.cart-modal {
+    width: 360px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: -10px -10px 15px rgb(58 58 58 / 9%), 10px 10px 15px rgb(66 66 66 / 35%);
+    position: absolute;
+    top: 80px;
+    background-color: v.$light;
+    right: 6px;
+
+    &__close {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid v.$primary;
+
+        button {
+            border: none;
+            font-size: 1.7rem;
+            color: v.$primary;
+            margin-right: v.$xl;
+            background: v.$light;
+            padding: 0.5rem;
+        }
+    }
+
+    &__title {
+        padding: 24px;
+        font-weight: 700;
+        
+    }
+    &__checkout-container {
+        padding: 24px;
+    }
+    &__details-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        justify-content: space-between;
+        color: v.$dark;
+    }
+    &__image {
+        width: 50px;
+        border-radius: 4px;
+    }
+    &__price span {
+        color: v.$black;
+        font-weight: 700;
+    }
+    &__checkout {
+        background-color: v.$primary;
+        width: 100%;
+        height: 57px;
+        border-radius: 8px;
+        border: none;
+        color: hsl(0deg, 0%, 100%);
+        font-size: 0.9em;
+        font-weight: 700;
+        gap: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+        transition: .5s;
+
+        &:disabled{
+            opacity: 0.5;
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+}
