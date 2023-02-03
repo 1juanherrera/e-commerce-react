@@ -7,7 +7,6 @@ import ProductDetail from './pages/ProductDetail'
 import Login from './pages/Login'
 import ProtectedRoutes from './components/ProtectedRoutes'
 import { useSelector } from 'react-redux'
-import Loader from './components/Loader'
 import Footer from './components/Footer'
 
 const App = () => {
@@ -17,8 +16,6 @@ const App = () => {
   return (
     <HashRouter>
           <NavBar />
-          {//isLoading && <Loader />
-          }
       <Routes>
 
           <Route path='/' element={<Home />}/>

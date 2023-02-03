@@ -85,7 +85,7 @@ const productDetail = () => {
                                 <span>price:</span>
                                 <h3>${related.price}</h3>
                                 <Link to={`/products/${related.id}`}>
-                                    <button>Add to card</button>
+                                    <button>Details</button>
                                 </Link>
                             </div>
                     </motion.div>
