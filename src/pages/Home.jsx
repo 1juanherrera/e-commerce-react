@@ -1,7 +1,7 @@
 import { filterByTermThunk, filterCategoriesThunk, getProductsThunk } from "../store/slices/products.slice"
 import { useSelector, useDispatch } from "react-redux"
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import axios from "axios"
 import '../style/main.scss'
 import { motion } from "framer-motion"
@@ -80,6 +80,7 @@ const Home = () => {
                                 <Link to={`/products/${newsProduct.id}`}>
                                     <button>Details</button>
                                 </Link>
+                                <button>Hola</button>
                             </div>
                         </div>
                     ))

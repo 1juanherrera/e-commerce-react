@@ -39,13 +39,13 @@ const SideBar = ({sidebar, setSidebar}) => {
         <div className="cart-modal">
         <div className="cart-modal__close">
         <p className="cart-modal__title">Cart</p>
-        <button onClick={() => setSidebar(false)}><i class='bx bx-x'></i></button>
+        <button onClick={() => setSidebar(false)}><i className='bx bx-x'></i></button>
         </div>
         <div className="cart-modal__checkout-container">
             { favorites.length !== 0
                 ?
                 (favorites.map((item) => (
-                    <p key={item.title}>{item.title}</p>
+                    <div className="cart-modal__info" key={item.title}>{item.title}</div>
                 )))
                 :
                 (<p>No hay productos seleccionados</p>)

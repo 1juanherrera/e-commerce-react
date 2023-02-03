@@ -24,7 +24,7 @@ const productDetail = () => {
         const allProducts = useSelector(state => state.products)
         const product = allProducts.find(products => products.id === Number(id))
         const productsRelated = allProducts.filter(products => products.category.name === product.category.name)
-        console.log(productsRelated)
+        //console.log(productsRelated)
 
 
 

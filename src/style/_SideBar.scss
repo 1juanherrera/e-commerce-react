@@ -2,7 +2,7 @@
 
 .cart-modal {
     width: 360px;
-    height: 400px;
+    height: 600px;
     border-radius: 8px;
     box-shadow: -10px -10px 15px rgb(58 58 58 / 9%), 10px 10px 15px rgb(66 66 66 / 35%);
     position: absolute;
@@ -62,7 +62,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 200px;
+        margin-top: 15px;
         transition: .5s;
 
         &:disabled{
@@ -71,6 +71,16 @@
         &:hover {
             transform: scale(1.1);
         }
+    }
+
+    &__info {
+        //border: 1px solid;
+        padding: 0.5rem;
+        border-radius: v.$md;
+        margin-top: v.$sm;
+        background-color: #D7D7DB;
+        box-shadow: -2px -2px 4px rgb(58 58 58 / 9%), 2px 2px 4px rgb(66 66 66 / 35%);
+
     }
     
 }

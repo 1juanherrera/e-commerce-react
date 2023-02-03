@@ -27,6 +27,8 @@
     
         &__follow-me {
             margin-right: 6px;
+            font-size: v.$lg;
+            font-family: 'Gilroy bold';
         }
     
         &__github-icon {
@@ -39,6 +41,7 @@
         }
     
         b {
-            font-size: 15px;
+            font-size: v.$lg;
+            font-family: 'Gilroy bold';
         }
 }
